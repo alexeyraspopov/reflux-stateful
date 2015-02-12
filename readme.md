@@ -10,6 +10,8 @@ RefluxJS Mixin which provides state management methods for Stores.
 
 I've used ImmutableJS just for example.
 
+If you're familiar with React's `this.state` and `this.setState` you already know how to use it with this mixin.
+
 You need to use `getDefaultData` in your store to declare initial data.
 
 	var Stateful = require('reflux-stateful'),
@@ -42,6 +44,22 @@ Mixin provides `store.getData` methods which allows you to fetch current state f
 			return { items: store.getData() };
 		}
 	});
+
+Also, there is `render`-like method for your data.
+
+	var Store = Reflux.createStore({
+		mixins: [Stateful],
+
+		getDefaultData: function(){
+			return [];
+		},
+
+		emit: function(state){
+			return state.join(',');
+		}
+	});
+
+All stores listeners will receive result of `emit` method.
 
 ## License
 
