@@ -1,0 +1,21 @@
+{
+  "name": "reflux-stateful",
+  "version": "0.0.0",
+  "description": "react-like state management in your reflux stores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "alexeyraspopov/reflux-stateful",
+  "keywords": [
+    "reflux",
+    "store",
+    "state"
+  ],
+  "author": "Alexey Raspopov (https://github.com/alexeyraspopov)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexeyraspopov/reflux-stateful/issues"
+  },
+  "homepage": "https://github.com/alexeyraspopov/reflux-stateful"
+}
