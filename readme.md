@@ -37,15 +37,15 @@ You need to use `getDefaultData` in your store to declare initial data.
 		}
 	});
 
-Mixin provides `store.getData` methods which allows you to fetch current state from store to React component
+Mixin provides `store.emit` methods which allows you to fetch current state from store to React component
 
 	var TodoList = React.createClass({
 		getInitialData: function(){
-			return { items: store.getData() };
+			return { items: store.emit() };
 		}
 	});
 
-Also, there is `render`-like method for your data.
+Also, `emit` is `render`-like method for your data.
 
 	var Store = Reflux.createStore({
 		mixins: [Stateful],
@@ -54,8 +54,8 @@ Also, there is `render`-like method for your data.
 			return [];
 		},
 
-		emit: function(state){
-			return state.join(',');
+		emit: function(){
+			return this.state.join(',');
 		}
 	});
 

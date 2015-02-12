@@ -1,15 +1,15 @@
 module.exports = {
+	getDefaultData: function(){
+		return {};
+	},
 	init: function(){
-		this.state = typeof this.getDefaultData === 'function' ? this.getDefaultData() : {};
+		this.state = this.getDefaultData();
 	},
 	setState: function(newState){
 		this.state = newState;
-		this.trigger(this.state);
+		this.trigger(this.emit());
 	},
-	getData: function(){
+	emit: function(){
 		return this.state;
-	},
-	emit: function(a){
-		return a;
 	}
 };
