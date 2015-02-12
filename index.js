@@ -8,5 +8,8 @@ module.exports = {
 	},
 	getData: function(){
 		return this.state;
+	},
+	emit: function(a){
+		return a;
 	}
 };
