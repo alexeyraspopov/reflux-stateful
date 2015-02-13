@@ -1,14 +1,7 @@
-function assign(target){
-	var sources = [].slice.call(arguments, 1),
-		index, source;
-
-	for(index = 0; index < sources.length; index++){
-		source = sources[index];
-
-		Object.keys(source).forEach(function(key){
-			target[key] = source[key];
-		});
-	}
+function assign(target, source){
+	Object.keys(source).forEach(function(key){
+		target[key] = source[key];
+	});
 }
 
 module.exports = {
