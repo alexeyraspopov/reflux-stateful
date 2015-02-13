@@ -1,6 +1,6 @@
 {
   "name": "reflux-stateful",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "react-like state management in your reflux stores",
   "main": "index.js",
   "scripts": {
