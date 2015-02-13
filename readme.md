@@ -4,7 +4,13 @@ RefluxJS Mixin which provides state management methods for Stores.
 
 ## Install
 
-	npm install reflux-stateful --save
+```bash
+$ npm install reflux-stateful --save
+```
+
+```bash
+$ bower install reflux-stateful --save
+```
 
 ## Usage
 
